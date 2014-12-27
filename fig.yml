@@ -11,6 +11,13 @@ symfony:
   volumes:
     - ./symfony/code:/var/www
 
+behat:
+  build: behat/
+  links:
+    - nginx
+  volumes:
+    - ./behat:/var/behat
+
 silex:
   build: silex_microservice/
   expose:
