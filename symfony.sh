@@ -56,4 +56,5 @@ sudo chmod -R 777 symfony/code/app/logs &&
 sudo fig run --rm symfony app/console generate:bundle &&
 sudo chmod -R 777 symfony/code/app/cache &&
 sudo chmod -R 777 symfony/code/app/logs &&
+sudo chmod -R 777 symfony/code/src/ &&
 sudo fig up
