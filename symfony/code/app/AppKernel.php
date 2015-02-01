@@ -17,7 +17,6 @@ class AppKernel extends Kernel
             new Doctrine\Bundle\DoctrineBundle\DoctrineBundle(),
             new Sensio\Bundle\FrameworkExtraBundle\SensioFrameworkExtraBundle(),
             new Snc\RedisBundle\SncRedisBundle(),
-            new Giantswarm\Bundle\WeatherBundle\GiantswarmWeatherBundle(),
             new Tg\Bundle\HelloProjectBundle\TgHelloProjectBundle()
         );
 
