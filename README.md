@@ -18,3 +18,9 @@ To install a new Symfony project i created a small bash script,
 this will clone this repository and boot up fig.
 
     curl -L https://raw.githubusercontent.com/timglabisch/symfony-docker-example/master/symfony.sh > ~/symfony.sh && chmod +x ~/symfony.sh && ~/symfony.sh some_directory
+
+
+## Notices
+
+### Graylog
+Graylog will not persist any kind of configuration, i plan to change this later on.
