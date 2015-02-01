@@ -8,6 +8,7 @@ symfony:
     - postgres
     - zookeeper
     - kafka
+    - graylog
   volumes:
     - ./symfony/code:/var/www
 
@@ -29,6 +30,7 @@ fpm:
     - zookeeper
     - kafka
     - silex
+    - graylog
   volumes_from:
     - symfony
   environment:
@@ -67,6 +69,15 @@ zookeeper:
   image: jplock/zookeeper
   ports:
     - "2181"
+
+graylog:
+  image: sjoerdmulder/graylog2
+  ports:
+    - "1234:9000"
+    - "12201"
+    - "12900"
+  environment:
+    GRAYLOG2_PASSWORD: foo
 
 kafka:
   image: wurstmeister/kafka:0.8.1.1-1

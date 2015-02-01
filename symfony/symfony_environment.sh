@@ -19,3 +19,10 @@ export SYMFONY__kafka_port=${KAFKA_PORT_9092_TCP_PORT}
 
 export SYMFONY__silex_host=${SILEX_PORT_5560_TCP_ADDR}
 export SYMFONY__silex_port=${SILEX_PORT_5560_TCP_PORT}
+
+export SYMFONY__graylog_web_host=${GRAYLOG_PORT_9000_TCP_ADDR}
+export SYMFONY__graylog_web_port=${GRAYLOG_PORT_9000_TCP_PORT}
+export SYMFONY__graylog_gelf_host=${GRAYLOG_PORT_12201_TCP_ADDR}
+export SYMFONY__graylog_gelf_port=${GRAYLOG_PORT_12201_TCP_PORT}
+export SYMFONY__graylog_api_host=${GRAYLOG_PORT_12900_TCP_ADDR}
+export SYMFONY__graylog_api_port=${GRAYLOG_PORT_12900_TCP_PORT}

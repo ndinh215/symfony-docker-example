@@ -22,7 +22,7 @@ RUN apt-get update && apt-get install -y \
     echo "extension=zmq.so" > /etc/php5/fpm/conf.d/zmq.ini
 
 
-RUN echo 21
+RUN echo 1
 
 ADD start.sh /start.sh
 

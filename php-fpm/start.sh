@@ -29,6 +29,13 @@ echo "env[SYMFONY__kafka_port] = ${KAFKA_PORT_9092_TCP_PORT}" >> /etc/php5/fpm/p
 echo "env[SYMFONY__silex_host] = ${SILEX_PORT_5560_TCP_ADDR}" >> /etc/php5/fpm/pool.d/www.conf
 echo "env[SYMFONY__silex_port] = ${SILEX_PORT_5560_TCP_PORT}" >> /etc/php5/fpm/pool.d/www.conf
 
+echo "env[SYMFONY__graylog_web_host] = ${GRAYLOG_PORT_9000_TCP_ADDR}" >> /etc/php5/fpm/pool.d/www.conf
+echo "env[SYMFONY__graylog_web_port] = ${GRAYLOG_PORT_9000_TCP_PORT}" >> /etc/php5/fpm/pool.d/www.conf
+echo "env[SYMFONY__graylog_gelf_host] = ${GRAYLOG_PORT_12201_TCP_ADDR}" >> /etc/php5/fpm/pool.d/www.conf
+echo "env[SYMFONY__graylog_gelf_port] = ${GRAYLOG_PORT_12201_TCP_PORT}" >> /etc/php5/fpm/pool.d/www.conf
+echo "env[SYMFONY__graylog_api_host] = ${GRAYLOG_PORT_12900_TCP_ADDR}" >> /etc/php5/fpm/pool.d/www.conf
+echo "env[SYMFONY__graylog_api_port] = ${GRAYLOG_PORT_12900_TCP_PORT}" >> /etc/php5/fpm/pool.d/www.conf
+
 
 if [ "$*" == "/bin/bash" ]; then
     exec /usr/sbin/php5-fpm --nodaemonize

@@ -14,7 +14,7 @@ RUN apt-get update && apt-get install -y \
     php5-pgsql \
     php5-xdebug
 
-RUN echo 6
+RUN echo 1
 ADD xdebug.sh /bin/xdebug
 
 RUN curl -sS https://getcomposer.org/installer | php
